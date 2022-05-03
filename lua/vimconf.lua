@@ -1,5 +1,5 @@
+
 vim.cmd([[
-set autochdir
 set mouse+=a
 set tabstop=2
 set shiftwidth=2
@@ -19,7 +19,6 @@ function! OpenTerminal()
 	split term://zsh
 	resize 10
 endfunction
-
-
 ]])
+
 

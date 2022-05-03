@@ -9,6 +9,7 @@ return require('packer').startup(
   	use 'L3MON4D3/LuaSnip' -- Snippets plugin
 		use 'wbthomason/packer.nvim'
 		use 'neovim/nvim-lspconfig'
+    use "lukas-reineke/indent-blankline.nvim"
 		use {
   		'nvim-telescope/telescope.nvim',
   		requires = { {'nvim-lua/plenary.nvim'} }
@@ -21,7 +22,6 @@ return require('packer').startup(
     	},
     	config = function() require'nvim-tree'.setup {} end
 		}
-	
 		use {
   		'nvim-lualine/lualine.nvim',
   		requires = { 'kyazdani42/nvim-web-devicons', opt = true }
